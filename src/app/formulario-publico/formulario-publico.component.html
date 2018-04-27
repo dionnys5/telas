@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <mat-hint class="text-center d-block my-5 pt-2">Cadastro caso público</mat-hint>
+
+  <form #login="ngForm" >
+    <mat-form-field class="w-100">
+      <input matInput type="text" placeholder="Título" name="titulo" [(ngModel)]="titulo">
+      <button mat-button *ngIf="email" matSuffix mat-icon-button aria-label="Clear" (click)="email=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <textarea matInput type="text" placeholder="Conte sua história aqui..."
+                name="historia" [(ngModel)]="historia"></textarea>
+
+      <button mat-button *ngIf="senha" matSuffix mat-icon-button aria-label="Clear" (click)="senha=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="file_input_div">
+      <div class="file_input">
+        <label class="image_input_button mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored">
+          <i class="material-icons">file_upload</i>Adicione uma imagem de quem procura.
+        </label>
+        <input id="file_input_file" class="none" type="file" />
+      </div>
+    </div>
+    <button mat-raised-button color="primary" class="w-100">Enviar</button>
+  </form>
+
+</div>
