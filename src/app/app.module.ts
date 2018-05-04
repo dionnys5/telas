@@ -13,6 +13,8 @@ import { AreaDeCasosPrivadosComponent } from './area-de-casos-privados/area-de-c
 import { FormularioPrivadoComponent } from './formulario-privado/formulario-privado.component';
 import { CabecalhoMenuComponent } from './cabecalho-menu/cabecalho-menu.component';
 import { EditarCasoPrivadoComponent } from './editar-caso-privado/editar-caso-privado.component';
+import { CasoPrivadoDetalhadoComponent } from './caso-privado-detalhado/caso-privado-detalhado.component';
+import { ReconhecimentoFacialComponent } from './reconhecimento-facial/reconhecimento-facial.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { EditarCasoPrivadoComponent } from './editar-caso-privado/editar-caso-pr
     AreaDeCasosPrivadosComponent,
     FormularioPrivadoComponent,
     CabecalhoMenuComponent,
-    EditarCasoPrivadoComponent
+    EditarCasoPrivadoComponent,
+    CasoPrivadoDetalhadoComponent,
+    ReconhecimentoFacialComponent
   ],
   imports: [
     BrowserModule,
