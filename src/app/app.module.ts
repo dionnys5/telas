@@ -7,11 +7,23 @@ import {MaterialModule} from './material.module';
 import { FormularioPublicoComponent } from './formulario-publico/formulario-publico.component';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { AreaDeCasosPublicosComponent } from './area-de-casos-publicos/area-de-casos-publicos.component';
+import { EditarCasoPublicoComponent } from './editar-caso-publico/editar-caso-publico.component';
+import { AreaDeCasosPrivadosComponent } from './area-de-casos-privados/area-de-casos-privados.component';
+import { FormularioPrivadoComponent } from './formulario-privado/formulario-privado.component';
+import { CabecalhoMenuComponent } from './cabecalho-menu/cabecalho-menu.component';
+import { EditarCasoPrivadoComponent } from './editar-caso-privado/editar-caso-privado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioPublicoComponent
+    FormularioPublicoComponent,
+    AreaDeCasosPublicosComponent,
+    EditarCasoPublicoComponent,
+    AreaDeCasosPrivadosComponent,
+    FormularioPrivadoComponent,
+    CabecalhoMenuComponent,
+    EditarCasoPrivadoComponent
   ],
   imports: [
     BrowserModule,

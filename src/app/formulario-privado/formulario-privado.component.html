@@ -1,0 +1,41 @@
+<div class="container mt-4">
+  <mat-hint class="text-center d-block my-5 pt-2">Cadastrar caso privado</mat-hint>
+
+  <form #login="ngForm" >
+    <mat-form-field class="w-100">
+      <input matInput type="text" placeholder="Título" name="titulo" [(ngModel)]="titulo" required>
+      <button mat-button *ngIf="email" matSuffix mat-icon-button aria-label="Clear" (click)="email=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <input matInput type="text" placeholder="Nome de quem você procura" name="nome" [(ngModel)]="nome" required>
+      <button mat-button *ngIf="email" matSuffix mat-icon-button aria-label="Clear" (click)="email=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <input matInput type="number" placeholder="Idade" name="idade" [(ngModel)]="idade" required>
+      <button mat-button *ngIf="email" matSuffix mat-icon-button aria-label="Clear" (click)="email=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-checkbox>
+          Incluir Características
+        </mat-checkbox>
+    </mat-form-field>
+
+    <mat-form-field class="w-100">
+      <textarea matInput type="text" placeholder="Conte sua história aqui..."
+                name="historia" [(ngModel)]="historia" required></textarea>
+
+      <button mat-button *ngIf="senha" matSuffix mat-icon-button aria-label="Clear" (click)="senha=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="w-100 mt-4">Enviar</button>
+  </form>
+
+</div>
