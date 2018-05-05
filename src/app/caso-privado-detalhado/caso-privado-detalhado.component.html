@@ -18,15 +18,13 @@
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <mat-form-field>
-      <mat-checkbox>
-        Incluir Características
-      </mat-checkbox>
-    </mat-form-field>
+    <section class="example-section">
+      <mat-checkbox class="" [(ngModel)]="caracteristica">Incluir Características</mat-checkbox>
+    </section>
 
     <mat-form-field class="w-100">
       <textarea matInput type="text" placeholder="Conte sua história aqui..."
-                name="historia" [(ngModel)]="historia" required></textarea>
+                name="historia" [(ngModel)]="historia" cols="5" rows="7" required></textarea>
 
       <button mat-button *ngIf="senha" matSuffix mat-icon-button aria-label="Clear" (click)="senha=null">
         <mat-icon>close</mat-icon>

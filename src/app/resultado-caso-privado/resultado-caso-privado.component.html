@@ -1,0 +1,33 @@
+
+<div class="container mt-4">
+  <form #login="ngForm" >
+    <mat-form-field class="w-100">
+      <input matInput type="text" placeholder="Título" name="titulo" [(ngModel)]="titulo">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <input matInput type="text" placeholder="Nome de quem você procura" name="nome" [(ngModel)]="nome" >
+      <button mat-button *ngIf="email" matSuffix mat-icon-button aria-label="Clear" (click)="email=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <input matInput type="number" placeholder="Idade" name="idade" [(ngModel)]="idade">
+      <button mat-button *ngIf="email" matSuffix mat-icon-button aria-label="Clear" (click)="email=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+      <textarea matInput type="text" placeholder="Conte sua história aqui..."
+                name="historia" [(ngModel)]="historia" cols="5" rows="7" ></textarea>
+
+      <button mat-button *ngIf="senha" matSuffix mat-icon-button aria-label="Clear" (click)="senha=null">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </form>
+  <div class="text-right">
+    <button mat-fab color="warn" class="mb-4"><i class="material-icons">favorite_border</i></button>
+    <button mat-fab color="accent" class="mb-4"><i class="material-icons">delete_forever</i></button>
+    <button mat-fab color="primary" class="mb-4"><i class="material-icons">done</i></button>
+  </div>
+</div>

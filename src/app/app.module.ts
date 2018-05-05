@@ -15,6 +15,7 @@ import { CabecalhoMenuComponent } from './cabecalho-menu/cabecalho-menu.componen
 import { EditarCasoPrivadoComponent } from './editar-caso-privado/editar-caso-privado.component';
 import { CasoPrivadoDetalhadoComponent } from './caso-privado-detalhado/caso-privado-detalhado.component';
 import { ReconhecimentoFacialComponent } from './reconhecimento-facial/reconhecimento-facial.component';
+import { ResultadoCasoPrivadoComponent } from './resultado-caso-privado/resultado-caso-privado.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ReconhecimentoFacialComponent } from './reconhecimento-facial/reconheci
     CabecalhoMenuComponent,
     EditarCasoPrivadoComponent,
     CasoPrivadoDetalhadoComponent,
-    ReconhecimentoFacialComponent
+    ReconhecimentoFacialComponent,
+    ResultadoCasoPrivadoComponent
   ],
   imports: [
     BrowserModule,

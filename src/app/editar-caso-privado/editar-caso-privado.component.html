@@ -18,22 +18,37 @@
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
-    <mat-form-field>
-      <mat-checkbox>
-        Incluir Características
-      </mat-checkbox>
-    </mat-form-field>
+       <section class="example-section">
+       <mat-checkbox class="" [(ngModel)]="caracteristica">Incluir Características</mat-checkbox>
+   </section>
 
-    <mat-form-field class="w-100">
+       <mat-form-field class="w-100">
       <textarea matInput type="text" placeholder="Conte sua história aqui..."
-                name="historia" [(ngModel)]="historia" required></textarea>
+                name="historia" [(ngModel)]="historia" cols="5" rows="7" required></textarea>
 
-      <button mat-button *ngIf="senha" matSuffix mat-icon-button aria-label="Clear" (click)="senha=null">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-form-field>
+           <button mat-button *ngIf="senha" matSuffix mat-icon-button aria-label="Clear" (click)="senha=null">
+               <mat-icon>close</mat-icon>
+           </button>
+       </mat-form-field>
     <button mat-raised-button color="primary" class="w-100 mt-4">Alterar</button>
     <button mat-raised-button color="warn" class="w-100 mt-4 mb-4" (click)="teste()">Excluir</button>
   </form>
+<div class="container-fluid mb-2">
+    <div class="row" color="primary">
+        <h5>Resultados</h5>
+    </div>
+    <div class="row">
+        <mat-card class="w-100">
+            <p>Titulo Resultado 1</p>
+        </mat-card>
+        <mat-card class="w-100">
+            <p>Titulo Resultado 2</p>
+        </mat-card>
+        <mat-card class="w-100">
+            <p>Titulo Resultado 3</p>
+        </mat-card>
+    </div>
+</div>
+
 
 </div>
